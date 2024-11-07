@@ -1,0 +1,7 @@
+import static java.lang.Integer.parseInt;
+import static java.lang.Math.pow;
+
+static int CastomPow(String x, String y)
+    {
+        return (int)pow(parseInt(x),parseInt(y));
+    }
