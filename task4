@@ -1,0 +1,66 @@
+class task4
+{
+    public int findFirst (int[] arr, int x)
+    {
+        int pos = 0, goal = -1;
+        while(goal == -1 && pos < arr.length)
+        {
+            if(arr[pos]==x)
+                goal = pos;
+            else
+                pos++;
+        }
+        return goal;
+    }
+
+    public int maxAbs (int[] arr)
+    {
+        int goal = 0;
+        for(int i = 0; i < arr.length; i++)
+            if(Math.abs(arr[i])>Math.abs(goal))
+                goal = arr[i];
+        return goal;
+    }
+
+    public int[] add (int[] arr, int[] ins, int pos)
+    {
+        while (pos> arr.length)
+        {
+            System.out.println("Позиция находится вне массива. Повторите ввод ");
+            pos = Main.InputUnInt();
+        }
+        int[] mas = new int[arr.length+ ins.length];
+        for(int i = 0; i < pos; i++)
+            mas[i]=arr[i];
+        for(int i = 0; i < ins.length; i++)
+            mas[i+pos]=ins[i];
+        for(int i = pos; i < arr.length; i++)
+            mas[i+ arr.length-2]=arr[i];
+        return mas;
+    }
+
+    public int[] reverseBack (int[] arr)
+    {
+        int[] mas = new int[arr.length];
+        for(int i = 0; i < arr.length; i++)
+            mas[arr.length-i-1]=arr[i];
+        return mas;
+    }
+
+    public int[] findAll (int[] arr, int x)
+    {
+        int Count = 0;
+        for(int i = 0; i < arr.length; i++)
+            if(arr[i] == x)
+                Count++;
+        int[] mas = new int[Count];
+        int pos = 0;
+        for(int i = 0; i < arr.length; i++)
+            if(arr[i] == x)
+            {
+                mas[pos]=i;
+                pos++;
+            }
+        return  mas;
+    }
+}
