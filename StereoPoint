@@ -1,0 +1,16 @@
+ static public class StereoPoint extends Point
+    {
+        protected int Z;
+
+        public StereoPoint(int X, int Y, int Z)
+        {
+            super(X,Y);
+            this.Z = Z;
+        }
+
+        @Override
+        public String toString ()
+        {
+            return "{" + X + ";" + Y+ ";" + Z + "}";
+        }
+    }
