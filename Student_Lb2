@@ -1,0 +1,25 @@
+static public class Student
+    {
+        public String name;
+        public int[] score;
+
+        public Student(String name, int[] score)
+        {
+            this.name=name;
+            this.score = score;
+        }
+
+        @Override
+        public String toString ()
+        {
+            String s = name + ": [";
+            for(int i = 0; i < score.length-1; i++)
+            {
+                s+= score[i]+", ";
+            }
+            s += score[score.length-1]+"]";
+            return s;
+        }
+
+
+    }
