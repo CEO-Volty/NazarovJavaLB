@@ -1,0 +1,23 @@
+static float UniversalLength(Object[] mas)
+    {
+        Line temp_line;
+        Loman temp_loman;
+        float Sum = 0;
+        for (int i = 0; i < mas.length; i++)
+        {
+            if (mas[i].getClass() == Line.class)
+            {
+                temp_line = (Line)mas[i];
+                Sum += temp_line.length();
+            }
+
+            else
+            if (mas[i].getClass() == Loman.class)
+            {
+                temp_loman = (Loman)mas[i];
+                Sum += temp_loman.length();
+            }
+
+        }
+        return Sum;
+    }
