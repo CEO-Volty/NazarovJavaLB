@@ -1,0 +1,64 @@
+static public class SimpleArray
+    {
+        private int[] mas;
+
+        SimpleArray(int[] input)
+        {
+            mas = input;
+        }
+        SimpleArray(String input)
+        {
+            String[] sp = input.split(",");
+            mas = new int[sp.length];
+            for (int i = 0; i < sp.length; i++)
+                mas[i]=Integer.parseInt(sp[i]);
+        }
+        SimpleArray(SimpleArray input)
+        {
+            mas = input.mas.clone();
+        }
+
+        public int getPos(int pos)
+        {
+            try {
+                return mas[pos-1];
+            } catch (Exception e) {
+                System.out.println(e.toString());
+                return 0;
+            }
+        }
+
+        public void setPos(int pos, int val) {
+            try {
+                mas[pos-1]=val;
+            } catch (Exception e) {
+                System.out.println(e.toString());
+            }
+        }
+
+        public boolean isEmpty()
+        {
+            return mas.length == 0;
+        }
+
+        public int size()
+        {
+            return mas.length;
+        }
+
+        public int[] getMas() {
+            return mas;
+        }
+
+        @Override
+        public String toString ()
+        {
+            String s = "[";
+            for(int i = 0; i < mas.length-1; i++)
+            {
+                s+= mas[i]+", ";
+            }
+            s += mas[mas.length-1]+"]";
+            return s;
+        }
+    }
