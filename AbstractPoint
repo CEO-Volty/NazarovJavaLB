@@ -1,0 +1,23 @@
+    public abstract class Points3
+    {
+        private int X;
+        private int Y;
+        private int Z;
+    }
+    public abstract class Points2
+    {
+        private int X;
+        private int Y;
+    }
+    public abstract class Points1
+    {
+        private int X;
+    }
+    public abstract class PointsColor
+    {
+        private String color;
+    }
+    public abstract class PointsDate
+    {
+        private String date;
+    }
