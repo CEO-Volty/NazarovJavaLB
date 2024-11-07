@@ -1,0 +1,33 @@
+static public class Square
+    {
+        protected Point angle;
+        protected int len;
+
+        public Square(Point X, int len)
+        {
+            angle = X;
+            this.len=len;
+        }
+
+        public Square(int x, int y, int len)
+        {
+            angle = new Point(x,y);
+            this.len=len;
+        }
+
+        @Override
+        public String toString ()
+        {
+            return "Квадрат в точке "+angle+" со стороной " + len;
+        }
+
+        public Loman toLoman()
+        {
+            Point[] temp = new Point[4];
+            temp[0]=angle;
+            temp[1]=new Point(angle.X+len, angle.Y);
+            temp[2]=new Point(angle.X+len, angle.Y-len);
+            temp[3]=new Point(angle.X, angle.Y-len);
+            return new Loman(temp);
+        }
+    }
