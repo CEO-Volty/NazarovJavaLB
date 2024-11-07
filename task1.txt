@@ -1,0 +1,42 @@
+class task1 {
+
+    public double fraction (double x)
+    {
+        return Math.abs(x - (int)x);
+    }
+
+    public int charToNum (char x)
+    {
+        return (int)x - 48;
+    }
+
+    public boolean is2Digits (int x)
+    {
+        x = Math.abs(x);
+        if(x < 100 && x >=10)
+            return true;
+        else
+            return false;
+    }
+
+    public boolean isInRange (int a, int b, int num)
+    {
+        if(a<b)
+            if(num<=b && num>=a)
+                return true;
+            else
+                return false;
+        else if (num<=a && num>=b)
+            return true;
+        else
+            return false;
+    }
+
+    public boolean isEqual (int a, int b, int c)
+    {
+        if((float)a==(a+b+c)/3.)
+            return true;
+        else
+            return false;
+    }
+}
