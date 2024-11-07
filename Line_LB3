@@ -1,0 +1,62 @@
+static public class Line
+    {
+        private final Point begin;
+        private final Point end;
+
+        public Line(Point begin,Point end)
+        {
+            this.begin = new Point(begin.X, begin.Y);
+            this.end = new Point(end.X, end.Y);
+        }
+
+        public Line(int x1, int y1, int x2, int y2)
+        {
+            begin = new Point(x1,y1);
+            end = new Point(x2,y2);
+        }
+
+        public void setBegin(int x1, int y1) {
+            begin.X = x1;
+            begin.Y = y1;
+        }
+
+        public void setEnd(int x1, int y1) {
+            end.X = x1;
+            end.Y = y1;
+        }
+
+        public Point getBegin() {
+            return begin;
+        }
+
+        public Point getEnd() {
+            return end;
+        }
+
+        @Override
+        public String toString ()
+        {
+            return "Линия от "+begin+" до " + end;
+        }
+
+        public double length()
+        {
+            return Math.sqrt(Math.pow(begin.X-end.X,2)+Math.pow(begin.Y-end.Y,2));
+        }
+
+        @Override
+        public boolean equals(Object obj) {
+            if (this == obj)
+                return true;
+            if (obj == null || getClass() != obj.getClass())
+                return false;
+            Line temp = (Line) obj;
+            return (begin.equals(temp.begin)  && end.equals(temp.end));
+        }
+        @Override
+        public Line clone()
+        {
+            Line temp = new Line(new Point(begin.X, begin.Y),new Point(end.X, end.Y));
+            return temp;
+        }
+    }
