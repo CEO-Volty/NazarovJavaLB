@@ -1,0 +1,114 @@
+div#tekst_sverhu_kartinki {
+
+    
+    background-image: url(/Alert-avto.ru/images/company/backgraund/1.jpg);
+    height: 700px;
+    padding: 25px 0 0;
+    position: relative;
+
+}
+
+body {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+}
+
+.tekst_sverhu_kartinki_1 {
+
+    position: absolute;
+
+    left: 0;
+   
+    top: 10px;
+
+    left: 5px;
+
+
+
+    color: #c9c9c9;
+
+    
+
+}
+
+.tekst_sverhu_kartinki_1 span
+{
+    font: bold 24px/44px Helvetica, Sans-Serif;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+}
+.tekst_sverhu_kartinki_1 h1 {
+
+    margin-left: 50px;
+    color: #fff;
+    font-size: 84px;
+    font-weight: 700;
+    line-height: 92px;
+    
+    text-transform: uppercase;
+}
+
+p {
+    margin-top: 0%;
+    padding-top: 0%;
+    
+}
+
+.sample-page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+
+    gap: 20px;
+}
+
+text {
+    box-sizing: border-box;
+    color: #202020;
+    font-family: GLInterstate, sans-serif;
+    font-weight: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.stat-list
+{
+    display: flex;
+    background-color: #333333;
+    flex-flow: row;
+    padding-left: 50px;
+    justify-content:space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.stat
+{
+    color: #ffffff;
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 50px;
+    margin-top: 20px;
+
+}
+.stat number
+{
+    margin: auto;
+    color: #ffffff;
+    padding: 8px;
+   
+    font-size: 50px;
+    font-weight: 300;
+    
+    
+}
+.stat h3
+{
+    margin-top: 10px;
+    font-size: 30px;
+}

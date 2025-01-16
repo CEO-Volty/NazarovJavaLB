@@ -1,0 +1,20 @@
+
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="/css/style_index.css">
+<head>
+  <link rel="shortcut icon" href="images/logo_cut.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация | AddinFab</title>
+</head>
+<body>
+<form th:action="@{/register}" method="post" th:object="${userAc}">
+  <input type="text" th:field="*{username}" placeholder="Логин" required/>
+  <input type="password" th:field="*{password}" placeholder="Пароль" required/>
+  <input type="submit" name="submit" value="Зарегистрироваться">
+</form>
+</body>
+</html>

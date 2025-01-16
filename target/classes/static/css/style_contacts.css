@@ -1,0 +1,133 @@
+    add {
+        float: left;
+        margin-top: -10px;
+        margin-right: 10px;
+        float: right;
+        font-family: "Arial";
+        font-size: 15px;
+        line-height: 49px;
+        color: #ff0000;
+
+    }
+    body {
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        background-image:url(/Alert-avto.ru/images/contacts/fon/46464.jpeg);
+
+    }
+
+    #Contacts-page {
+        display: flex;
+        width: auto;
+        flex-flow: column;
+    gap: 30px;
+    
+    
+
+        
+
+    
+    }
+    h1
+    {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contacts
+    {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        
+        
+    }
+    hr{
+        size:3px;
+        width:100%; 
+        
+
+
+    }
+    .contacts_text
+    {
+        color: #333333;;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 18px;
+        width: auto;
+        white-space: nowrap;
+        font-size: 25px;
+    }
+    span
+    {
+        color: #000000;
+    
+    }
+    table {
+        color: #333333;;
+        
+    
+    }
+    th{
+        width: 800px;
+    }
+
+    .contacts_bloc_text
+    {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        
+    }
+    .contacts_bloc
+    {
+        display: flex;
+        gap: 700px;
+        height: auto;
+        width: auto;
+        margin-left: 50px;
+    margin-right: 150px;
+    
+
+        
+    }
+    .contacts_img
+    {
+        min-width: 700px;
+        width: 700px;
+    
+
+    }
+
+    .map
+    {
+    padding-top: 235px;
+    }
+    .contacts-set
+    {
+        display: flex;
+        gap: 500px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .contacts_text h4{
+        padding-left: 40%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    h3
+    {
+        margin-bottom: 10px;
+    }
+    .tekst_sverhu_kartinki_1 span
+    {
+        font: bold 24px/44px Helvetica, Sans-Serif;
+        padding: 8px;
+        font-size: 18px;
+        font-weight: 300;
+        color: white;
+    }

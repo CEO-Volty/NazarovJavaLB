@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  form {
+    margin: 50px auto;
+    width: 300px;
+    
+    padding: 50px;
+    
+  }
+  
+  form input[type="text"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(88, 148, 244);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+
+  div#table_avto
+  {
+    display: flex;
+    flex-direction: row;
+    background-color:  rgb(255, 255, 255);
+    
+    height: 900px;
+    
+  }
+  td
+  {
+   
+    border: 1px solid grey;
+    width: 900px;
+   
+  }
+  th{
+  
+    border: 1px solid grey;
+    width: 9px;
+   
+  }
+  div#table
+  {
+    padding-left: 50px;
+    display: flex;
+    
+    width: 1200px;
+    text-align: center;
+align-items: center;
+
+   
+  }
+  div#avto
+  {
+    background-color:grey;
+  }
+  input
+  {
+    border: black;
+  }
